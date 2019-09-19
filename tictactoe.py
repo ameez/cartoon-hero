@@ -125,7 +125,7 @@ def turn_handle(current_player):
 
     while position not in ['1', '2', '3', '4', '5', '6', '7', '8', '9']:
       print("\n Invalid input!! \n")
-      position = input("\n Enter a position from 1-9 (position 1 refers to left top corner and increases rightwards) or see the above figur with numbers wherer numbers indicate the postion in matrix: ")
+      position = input("\n Enter a position from 1-9 (position 1 refers to left top corner and increases rightwards) or see the above figur with numbers where numbers indicate the postion in matrix: ")
     position = int(position) - 1
     if board[position] == '_':
       valid= False
@@ -153,3 +153,4 @@ def check_if_tie():
 
 
 play_game()
+input("Press enter to exit")
